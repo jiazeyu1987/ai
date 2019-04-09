@@ -1,4 +1,5 @@
 from utils import  *
+from . import  *
 class FirstAlgorithm:
     def __init__(self):
         self._lists = []
@@ -16,6 +17,7 @@ class FirstAlgorithm:
         for i in range(len(self._lists)):
             list1 = self._lists[i]
             self._find_shorts(list1)
+            break
 
 
 
@@ -23,19 +25,46 @@ class FirstAlgorithm:
         print("((((((((( in short ))))))))))))))))")
         total_marks = self._get_total_marks(list1)
         mark_dict = self._get_mark_dict(total_marks)
+        sublist_dict = self._change_marklist_to_sublist(list1,mark_dict)
+        for k in sublist_dict:
+            print(k)
+        return sublist_dict
+
+        # for key in mark_dict:
+        #     print(key,mark_dict[key])for key in mark_dict:
+        #     print(key,mark_dict[key])
+
+    def _change_marklist_to_sublist(self,list1,mark_dict):
+        print("mark_dict:",mark_dict)
+        sublist_dict = []
+        for mark in mark_dict:
+            simplelist = []
+            show_number = mark_dict[mark]
+            if(len(mark)%3!=0):
+                raise  Exception("error on _change_marklist_to_sublist")
+            for i in range(int(len(mark)/3)):
+                start_point = mark[i*3]
+                len1 = mark[i*3+1]
+                type = mark[i*3+2]
+                sublist = list1[start_point:start_point+len1]
+                fae = FirstAlgorithmEntity(sublist,type)
+                simplelist.append(fae)
+            sublist_dict.append(FirstAlgorithmList(simplelist,show_number))
+        #print("sublist_dict",sublist_dict)
+        return sublist_dict
 
 
-        for key in mark_dict:
-            print(key,mark_dict[key])
 
     def _get_mark_dict(self,total_marks):
         dict1 = {}
         for all_marks in total_marks:
-            for mark in all_marks:
-                if (mark in dict1):
-                    dict1[mark] += 1
-                else:
-                    dict1[mark] = 1
+            tmp =()
+            for i in range(len(all_marks)):
+                tmp = tmp+all_marks[i]
+            if (tmp in dict1):
+                dict1[tmp] += 1
+            else:
+                dict1[tmp] = 1
         return dict1
 
     def _get_total_marks(self,list1):
