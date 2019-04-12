@@ -1,42 +1,59 @@
 from utils import  *
 from . import  *
+from copy import deepcopy
 class FirstAlgorithm:
     def __init__(self):
         self._lists = []
+        self._origin = []
         pass
 
     def append(self,list1):
         self._lists.append(list1)
 
     def analyse(self):
-        self._analist()
+        return self._analist()
 
 
     def _analist(self):
         #print("\n")
+        fal_big_list = []
         for i in range(len(self._lists)):
             list1 = self._lists[i]
-            self._find_shorts(list1)
-            break
+            fal_list = self._find_shorts(list1)
+            fal_big_list = fal_big_list+fal_list
+        return self._merge(fal_big_list)
 
+
+    def _merge(self,fal_big_list):
+        chain = FirstAlgorithmChain()
+        i=1
+        for fal in fal_big_list:
+            chain.add_entity_list(fal)
+
+
+        chain.merge_chains(self._lists)
+        return chain
 
 
     def _find_shorts(self,list1):
-        print("((((((((( in short ))))))))))))))))")
+        #print("((((((((( in short ))))))))))))))))")
         total_marks = self._get_total_marks(list1)
+        # for k in total_marks:
+        #     print(k)
+        # return
         mark_dict = self._get_mark_dict(total_marks)
-        sublist_dict = self._change_marklist_to_sublist(list1,mark_dict)
-        for k in sublist_dict:
-            print(k)
-        return sublist_dict
+        fallist = self._change_marklist_to_sublist(list1,mark_dict)
+        # for k in sublist_dict:
+        #     print(k)
+        return fallist
 
         # for key in mark_dict:
         #     print(key,mark_dict[key])for key in mark_dict:
         #     print(key,mark_dict[key])
 
     def _change_marklist_to_sublist(self,list1,mark_dict):
-        print("mark_dict:",mark_dict)
-        sublist_dict = []
+        #print("mark_dict:",mark_dict)
+        fallist = []
         for mark in mark_dict:
             simplelist = []
             show_number = mark_dict[mark]
@@ -49,88 +66,95 @@ class FirstAlgorithm:
                 sublist = list1[start_point:start_point+len1]
                 fae = FirstAlgorithmEntity(sublist,type)
                 simplelist.append(fae)
-            sublist_dict.append(FirstAlgorithmList(simplelist,show_number))
+            fallist.append(FirstAlgorithmList(simplelist,show_number))
         #print("sublist_dict",sublist_dict)
-        return sublist_dict
+        return fallist
 
 
 
     def _get_mark_dict(self,total_marks):
         dict1 = {}
-        for all_marks in total_marks:
+        for all_marks2 in total_marks:
+            all_marks = all_marks2[0]
+            list1 = all_marks2[1]
+            list2 = all_marks2[2]
             tmp =()
             for i in range(len(all_marks)):
                 tmp = tmp+all_marks[i]
             if (tmp in dict1):
-                dict1[tmp] += 1
+                dict1[tmp].append((list1,list2))
             else:
-                dict1[tmp] = 1
+                dict1[tmp] = [(list1,list2)]
         return dict1
 
     def _get_total_marks(self,list1):
         arr = []
-
-
         for i in range(len(self._lists)):
             if(list1 == self._lists[i]):
                 continue
-
             list2 = self._lists[i]
             arr1 = self._find_shorts_helper(list1,list2)
-            arr1 = sorted(arr1,key=lambda list2:len(list2),reverse=True)
-            marks,unmarks = self._get_marks(list1,arr1)
-            all_marks = []
-            for k in marks:
-                all_marks.append((k[0],k[1],True))
-            for k in unmarks:
-                all_marks.append((k[0],k[1],False))
-            all_marks = sorted(all_marks,key=lambda mark:mark[0])
-
-            num =0
-            for i in all_marks:
-                num+=i[1]
-            if(num!=len(list1)):
-                raise Exception("marks length is wrong")
-            arr.append(all_marks)
+            #print(arr1,list1,list2)
+            marks,unmarks = get_marks(list1,arr1)
+            all_marks = self._get_all_marks(marks,unmarks)
+            self._check_legal(list1,all_marks)
+            arr.append((all_marks,list1,list2))
         return arr
 
+    def _check_legal(self,list1,all_marks):
+        num = 0
+        for i in all_marks:
+            num += i[1]
+        if (num != len(list1)):
+            raise Exception("marks length is wrong")
 
-    def _get_marks(self,list1,list_container):
-        #print("omark", list_container)
-
-        marks = []
-        for arrk in list_container:
-            pos_arrs = indexof(list1, arrk)
-            for pos_arr in pos_arrs:
-                self._add_mark(list1,marks,pos_arr)
-        marks = sorted(marks,key=lambda mark:mark[0])
-        index = 0
-        unmarks = []
-        for i in range(len(marks)):
-            mark = marks[i]
-            if(index<mark[0]):
-                unmarks.append((index,mark[0]-index))
-                index=mark[0]+mark[1]
-            elif(index==mark[0]):
-                index = mark[0] + mark[1]
-        if(index<len(list1)):
-            unmarks.append((index,len(list1)-index))
-        return marks,unmarks
-        #print("mark:",list1,marks,unmarks)
-
-    def _add_mark(self,list1,marks,mark):
-        Repeat = False
-        for i in range(mark[0],mark[0]+mark[1]):
-            for unit in marks:
-                for j in range(unit[0],unit[0]+unit[1]):
-                    if(i==j):
-                        Repeat = True
-        if(Repeat):
-            return
-        else:
-            marks.append(mark)
+    # marks[(0, 2), (3, 9)]
+    # unmarks[(2, 1)]
+    # all_marks[(0, 2, True), (2, 1, False), (3, 9, True)]
+    #
+    # marks[(0, 2), (3, 9)]
+    # unmarks[(2, 1)]
+    # all_marks[(0, 2, True), (2, 1, False), (3, 9, True)]
+    #
+    # marks[(0, 2), (3, 9)]
+    # unmarks[(2, 1)]
+    # all_marks[(0, 2, True), (2, 1, False), (3, 9, True)]
+    #
+    # marks[(0, 2), (3, 9)]
+    # unmarks[(2, 1)]
+    # all_marks[(0, 2, True), (2, 1, False), (3, 9, True)]
+    def _get_all_marks(self,marks,unmarks):
+        all_marks = []
+        for k in marks:
+            all_marks.append((k[0], k[1], True))
+        for k in unmarks:
+            all_marks.append((k[0], k[1], False))
+        all_marks = sorted(all_marks, key=lambda mark: mark[0])
+        # print("")
+        # print("marks",marks)
+        # print("unmarks", unmarks)
+        # print("all_marks", all_marks)
+        return all_marks
 
 
+
+
+
+    # list1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    # list2: [1, 2, 6, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    # return_value[[1, 2], [4, 5, 6, 7, 8, 9, 10, 11, 12]]
+    #
+    # list1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    # list2: [1, 2, 7, 1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    # return_value[[1, 2], [4, 5, 6, 7, 8, 9, 10, 11, 12]]
+    #
+    # list1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    # list2: [1, 2, 8, 4, 5, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    # return_value[[1, 2], [4, 5], [4, 5, 6, 7, 8, 9, 10, 11, 12]]
+    #
+    # list1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    # list2: [1, 2, 1, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    # return_value[[1, 2], [4, 5, 6, 7, 8, 9, 10, 11, 12]]
     def _find_shorts_helper(self,list1,list2):
         #print("\n\n\n")
         arr = []
@@ -158,13 +182,19 @@ class FirstAlgorithm:
                                 #print("^^^^",i,j,k,subl,len(list1),len2)
                                 pass
                         else:
-                            if(k>1):
+                            if(k>0):
                                 #print("***",i,j,k)
                                 arr.append(list1[i:i+k])
                             break
 
                 j+=1
             i+=1
+        arr = sorted(arr, key=lambda list2: len(list2), reverse=True)
+        # print("")
+        # print("list1:",list1)
+        # print("list2:",list2)
+        # print("return_value",arr)
+        #print(arr,list1,list2)
         return arr
 
 

@@ -20,3 +20,66 @@ def indexof(parent_list,child_list):
             else:
                 break
     return pos_len_arr
+
+
+# list1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# list_container[[4, 5, 6, 7, 8, 9, 10, 11, 12], [1, 2]]
+# marks[(0, 2), (3, 9)]
+# unmarks[(2, 1)]
+#
+# list1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# list_container[[4, 5, 6, 7, 8, 9, 10, 11, 12], [1, 2]]
+# marks[(0, 2), (3, 9)]
+# unmarks[(2, 1)]
+#
+# list1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# list_container[[4, 5, 6, 7, 8, 9, 10, 11, 12], [1, 2], [4, 5]]
+# marks[(0, 2), (3, 9)]
+# unmarks[(2, 1)]
+#
+# list1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# list_container[[4, 5, 6, 7, 8, 9, 10, 11, 12], [1, 2]]
+# marks[(0, 2), (3, 9)]
+# unmarks[(2, 1)]
+def get_marks(list1,list_container):
+    #print("omark", list_container)
+
+    marks = []
+    for arrk in list_container:
+        pos_arrs = indexof(list1, arrk)
+        for pos_arr in pos_arrs:
+            add_mark(list1,marks,pos_arr)
+    marks = sorted(marks,key=lambda mark:mark[0])
+    index = 0
+    unmarks = []
+    for i in range(len(marks)):
+        mark = marks[i]
+        if(index<mark[0]):
+            unmarks.append((index,mark[0]-index))
+            index=mark[0]+mark[1]
+        elif(index==mark[0]):
+            index = mark[0] + mark[1]
+    if(index<len(list1)):
+        unmarks.append((index,len(list1)-index))
+    # print("")
+    # print("list1:",list1)
+    # print("list_container",list_container)
+    # print("marks",marks)
+    # print("unmarks",unmarks)
+
+    marks =sorted(marks,key=lambda mark:mark[0])
+    unmarks = sorted(unmarks, key=lambda mark: mark[0])
+    return marks,unmarks
+    #print("mark:",list1,marks,unmarks)
+
+def add_mark(list1,marks,mark):
+    Repeat = False
+    for i in range(mark[0],mark[0]+mark[1]):
+        for unit in marks:
+            for j in range(unit[0],unit[0]+unit[1]):
+                if(i==j):
+                    Repeat = True
+    if(Repeat):
+        return
+    else:
+        marks.append(mark)

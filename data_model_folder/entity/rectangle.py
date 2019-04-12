@@ -1,7 +1,7 @@
 import numpy as np
 import math
 from .. import  *
-
+import data_model_folder as dmf
 class Rectangle:
     def __init__(self):
         pass
@@ -33,12 +33,12 @@ class Rectangle:
             ]
         return np.asarray(q,np.int16).reshape(20,20)
     
-def draw_rectangle(entity,center_point,width,height,is_solid=False):
+def draw_rectangle(entity,center_point,width,height,val,is_solid=False):
     shape = entity.shape
     row = shape[0]
     col = shape[1]
 
-    if(is_point_position_legal(entity,center_point)==False):
+    if(dmf.is_point_position_legal(entity,center_point)==False):
         print(center_point)
         raise Exception("center point is illegal")
 
@@ -66,15 +66,15 @@ def draw_rectangle(entity,center_point,width,height,is_solid=False):
 
     if(is_solid==False):
         for i in range(left_up_point[1],right_up_point[1]+1):
-            draw_point(entity,(left_up_point[0],i),1)
+            dmf.draw_point(entity,(left_up_point[0],i),val)
         for i in range(left_down_point[1],right_down_point[1]+1):
-            draw_point(entity,(left_down_point[0],i),1)
+            dmf.draw_point(entity,(left_down_point[0],i),val)
         for i in range(left_up_point[0],left_down_point[0]+1):
-            draw_point(entity,(i,left_up_point[1]),1)
+            dmf.draw_point(entity,(i,left_up_point[1]),val)
         for i in range(right_up_point[0],right_down_point[0]+1):
-            draw_point(entity,(i,right_up_point[1]),1)
+            dmf.draw_point(entity,(i,right_up_point[1]),val)
     else:
         for i in range(left_up_point[1],right_up_point[1]+1):
             for j in range(right_up_point[0],right_down_point[0]+1):
-                draw_point(entity, (j,i), 1)
-    pass
+                dmf.draw_point(entity, (j,i), val)
+    return entity

@@ -7,8 +7,10 @@ class FirstAlgorithmList:
 
     def __str__(self):
         print("\n\nFirstAlgorithmList Start")
-        for k in self._list:
-            print(k)
-        print("show_times:",self._show_times)
+        for i in range(len(self._list)):
+            print(i)
+            print(self._list[i])
+        print("show_times:")
+        print(self._show_times)
         print("FirstAlgorithmList End\n")
         return ""

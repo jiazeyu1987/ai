@@ -1,6 +1,7 @@
 import numpy as np
 import math
 from .. import  *
+import  data_model_folder as dmf
 class CircleEntity:
     def __init__(self):
         pass
@@ -34,17 +35,17 @@ class CircleEntity:
             ]
         return np.asarray(q,np.int16).reshape(21,21)
 
-def draw_circle(entity,item_value = 1):
+def draw_circle(entity,item_value = 1,radius = 3):
     shape = entity.shape
     circle_center = ((int)((shape[0]-1)/2),(int)((shape[1]-1)/2))
-    radius = math.floor(shape[0]*1/4)
+    #radius = math.floor(shape[0]*1/4)
     return draw_exact_circle(entity,circle_center,radius,item_value)
 
 def draw_exact_circle(entity,center,radius,item_value):
     new_entity = create_clear_entity(entity)
     first_point = (center[0] + radius, center[1])
     box = [first_point]
-    draw_point(new_entity, first_point, item_value)
+    dmf.draw_point(new_entity, first_point, item_value)
     draw_circle_point_by_point(new_entity, center, radius, first_point, first_point, box,item_value)
     return (new_entity)
 
@@ -70,5 +71,5 @@ def draw_circle_point_by_point(entity,center_point,radius,father_point,elder,box
         newbox = box.copy()
         newbox.append(minVal)
         #time.sleep(1)
-        draw_point(entity,minVal,item_value)
+        dmf.draw_point(entity,minVal,item_value)
         draw_circle_point_by_point(entity,center_point,radius,minVal,elder,newbox,item_value)

@@ -8,3 +8,8 @@ class FirstAlgorithmEntity:
     def __str__(self):
         return "<FirstAlgorithmEntity "+str(self._value)+" - "+str(self._known)+">"
 
+    def is_known(self):
+        return self._known
+
+    def get_value(self):
+        return self._value

@@ -1,78 +1,7 @@
 import numpy as np
 import math
 import time
-
-def is_point_position_legal(entity,point):
-    if(point[0]<0 or point[1]<0 or point[0]>entity.shape[0]-1 or point[1]>entity.shape[1]-1):
-        return False
-    return True
-
-def connect_point(entity,point1,point2,val):
-    #(entity, point1, val)
-    #draw_point(entity, point2, val)
-    width = abs(point2[1] - point1[1])
-    height = abs(point2[0]-point1[0])
-    if(width>height):
-        for i in range(width+1):
-            minW = min(point2[1],point1[1])
-            minH = min(point2[0],point1[0])
-            pointW = i
-            pointH = round(height/width*i)
-
-            point3 = (minH+pointH,minW+pointW)
-            draw_point(entity,point3,val)
-    else:
-        for i in range(height+1):
-            minW = min(point2[1],point1[1])
-            minH = min(point2[0],point1[0])
-            pointW = i
-            pointH = round(width/height*i)
-            point3 = (minH+pointH,minW+pointW)
-            draw_point(entity,point3,val)
-
-def min(a,b):
-    if(a<b):
-        return a
-    return b
-
-def max(a,b):
-    if(a>b):
-        return a
-    return b
-
-def draw_oblique_line(entity,start_point,direction,len1,val):
-    old_point = None
-    draw_point(entity, start_point, val)
-    len1 -= 1
-    if(direction == "up_right"):
-        old_point = start_point
-        for i in range(0,len1):
-            new_point = (old_point[0]-1,old_point[1]+1)
-            draw_point(entity,new_point,val)
-            old_point = new_point
-    elif(direction == "down_right"):
-        old_point = start_point
-        for i in range(0, len1):
-            new_point = (old_point[0] + 1, old_point[1] + 1)
-            draw_point(entity, new_point, val)
-            old_point = new_point
-    elif (direction == "down_left"):
-        old_point = start_point
-        for i in range(0, len1):
-            new_point = (old_point[0] + 1, old_point[1] - 1)
-            draw_point(entity, new_point, val)
-            old_point = new_point
-    elif (direction == "up_left"):
-        old_point = start_point
-        for i in range(0, len1):
-            new_point = (old_point[0] - 1, old_point[1] - 1)
-            draw_point(entity, new_point, val)
-            old_point = new_point
-    return old_point
-
-def get_center_point(entity):
-    shape = entity.shape
-    return ((int)((shape[0] - 1) / 2), (int)((shape[1] - 1) / 2))
+import data_model_folder as dmf
 
 def in_list(v,list):
     for i in list:
@@ -99,52 +28,16 @@ def get_3_square_value_arr(entity,current_point):
     arr = [p0, p1, p2, p3, p4, p5, p6, p7, p8]
     return arr
 
-def draw_point(entity,point1,val):
-    entity[point1[0],point1[1]]=val
+
 
 def is_near(p1,p2):
     return math.fabs(p1[0]-p2[0])<2 and math.fabs(p1[1]-p2[1])<2
 
-## 0 1 2
-## 3 X 5
-## 6 7 8
-def in_point_position(entity,source_point,dest_point,pos_arr):
-    for i in pos_arr:
-        if source_point == get_point_by_position(entity,dest_point,i):
-            return True
-    return False
 
-def get_point_position(entity,source_point,dest_point):
-    di = -1
-    for i in range(9):
-        if (i != 4 and in_point_position(entity,source_point,dest_point,[i])):
-            di = i
-            break
-    return di
 
-def get_point_by_position(entity,outer_point,position):
-    return_point = None
-    if (position == 0):
-        return_point = (outer_point[0] - 1, outer_point[1] - 1)
-    elif (position == 1):
-        return_point = (outer_point[0] - 1, outer_point[1])
-    elif (position == 2):
-        return_point = (outer_point[0] - 1, outer_point[1] + 1)
-    elif (position == 3):
-        return_point = (outer_point[0], outer_point[1] - 1)
-    elif (position == 5):
-        return_point = (outer_point[0], outer_point[1] + 1)
-    elif (position == 6):
-        return_point = (outer_point[0] + 1, outer_point[1] - 1)
-    elif (position == 7):
-        return_point = (outer_point[0] + 1, outer_point[1])
-    elif (position == 8):
-        return_point = (outer_point[0] + 1, outer_point[1] + 1)
-    else:
-        raise Exception(position)
-    return return_point
 
-def get_value(entity,point):
+
+def get_value_reverse(entity,point):
     return entity[point[0]][point[1]]
 
 
@@ -163,23 +56,6 @@ def generate_map(point_list):
     return rowmap,colmap
 
 
-def _expand_point(entity,point,point_list):
-    row = point[0]
-    col = point[1]
-    arr = []
-    arr=[(row-1,col),(row+1,col),(row,col-1),(row,col+1)]
-    for v in arr:
-        if(entity[v[0]][v[1]]==0):
-            entity[v[0]][v[1]]=2
-
-def get_entity_point(entity,val):
-    shape = entity.shape
-    arr = []
-    for i in range(shape[0]):
-        for j in range(shape[1]):
-            if(entity[i][j]==val):
-                arr.append((i,j))
-    return arr
 
 
 
@@ -190,8 +66,8 @@ def get_entity_point(entity,val):
 def get_distance(point1,point2):
     return math.sqrt((point2[1]-point1[1])*(point2[1]-point1[1])+(point2[0]-point1[0])*(point2[0]-point1[0]))
 
-def draw_point(entity,point1,val):
-    entity[point1[0],point1[1]]=val
+# def draw_point(entity,point1,val):
+#     entity[point1[0],point1[1]]=val
 
 def create_clear_entity(entity):
     shape = entity.shape
@@ -210,15 +86,20 @@ def is_circle(entity):
 
 
 def is_closed(data_model):
-    shape = data_model.shape
-    row = shape[0]
-    col = shape[1]
-    for i in range(row):
-        for j in range(col):
-            if(data_model[i][j]!=0):
-                if(is_closed_item(data_model,i,j)):
-                    pass
-    return False
+    # shape = data_model.shape
+    # row = shape[0]
+    # col = shape[1]
+    # for i in range(row):
+    #     for j in range(col):
+    #         if(data_model[i][j]!=0):
+    #             if(is_closed_item(data_model,i,j)):
+    #                 pass
+    # return False
+    f,_ = dmf.is_has_a_hole(entity)
+    if(f):
+        return True
+    else:
+        return False
 
 def is_closed_item(data_model,row,col):
     nearby = get_nearby_value(data_model,row,col,1)
