@@ -3,6 +3,16 @@ import math
 import time
 import data_model_folder as dmf
 
+def clone(entity):
+    row = entity.shape[0]
+    col = entity.shape[1]
+    news = dmf.get_empty_entity(col,row)
+    for i in range(row):
+        for j in range(col):
+            news[i][j] = entity[i][j]
+    return news
+
+
 def in_list(v,list):
     for i in list:
         if(i==v):

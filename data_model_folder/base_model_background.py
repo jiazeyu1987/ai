@@ -1,7 +1,7 @@
 import  numpy as np
 
 def get_empty_entity(width,height):
-    arr = np.zeros((width,height),dtype=np.int16)
+    arr = np.zeros((height,width),dtype=np.int16)
     return arr
 
 _bmb_square_21 = [
