@@ -1,4 +1,4 @@
-from person.attribute.attribute_main import *
+from .action import *
 from .attribute import *
 from .perceptions import *
 from .person_main import *

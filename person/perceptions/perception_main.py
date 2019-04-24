@@ -4,15 +4,15 @@ import  time
 class PerceptionMain:
     def __init__(self):
         self.perception_food = Food(self)
+        self.perception_wanna_play = WannaPlay(self)
         self.queue = queue.Queue()
         pass
 
 
     def update(self):
         perceptionlist = self.get_all()
-        print("is thinking")
-        for k in perceptionlist:
-            print(k)
+        return perceptionlist
+
 
     def add_perception(self,list1):
         self.queue.put(list1)

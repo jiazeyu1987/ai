@@ -3,6 +3,7 @@ class JTreeNode:
         self.value = val
         self.next = []
         self.pre = None
+        self.priority = -1
 
     def copy(self):
         jnode = JTreeNode()

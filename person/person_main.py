@@ -2,7 +2,7 @@ import threading
 import time
 
 from person.perceptions import *
-
+from person.decide_tree import *
 
 class PersonMain:
     def __init__(self,timeline,name):
@@ -11,8 +11,8 @@ class PersonMain:
         self.current_scene = None
         self.perception = PerceptionMain()
         self.attribute = AttributeMain(self.perception)
-
-
+        self.decide_tree = DecideTreeMain(self)
+        self.action = ActionMain(self)
         t = threading.Thread(target=self.main_loop, args=())
         t.setDaemon(True)
         t.start()
@@ -27,7 +27,9 @@ class PersonMain:
     def update_from_inside(self):
         #self.reflect_in_scene()
         self.attribute.update()
-        self.perception.update()
+        perceptionlist = self.perception.update()
+        self.decide_tree.update(perceptionlist)
+        print("==================================")
 
     def update_from_outside(self):
         pass

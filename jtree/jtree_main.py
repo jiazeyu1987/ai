@@ -12,6 +12,8 @@ class JTreeMain:
         else:
             return None
 
+    def add_chain(self,chain):
+        self.add(chain.chain_head.value,chain)
 
     def add(self,string_key,chain):
         if(string_key in self.dict):
