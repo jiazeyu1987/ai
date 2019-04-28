@@ -1,3 +1,4 @@
+from person import  *
 class AttributeMain:
     def __init__(self,perception_main):
         self._energy =100
@@ -14,7 +15,7 @@ class AttributeMain:
         self.set_wanna_play(self._wanna_play + 20)
         self.set_food(self._food - 2)
 
-        print("self.food:",str(self._food))
+        prinr("self.food:",str(self._food))
 
     def set_wanna_play(self,value):
         if(value>70):
@@ -22,11 +23,11 @@ class AttributeMain:
         else:
             self._wanna_play = value
         if(self._wanna_play>160):
-            self._perception_main.perception_wanna_play.OnPlay(4)
+            self._perception_main.perception_wanna_play.OnPlay(1)
         elif (self._wanna_play > 120):
-            self._perception_main.perception_wanna_play.OnPlay(3)
+            self._perception_main.perception_wanna_play.OnPlay(1)
         elif (self._wanna_play > 60):
-            self._perception_main.perception_wanna_play.OnPlay(2)
+            self._perception_main.perception_wanna_play.OnPlay(1)
         elif (self._wanna_play > 20):
             self._perception_main.perception_wanna_play.OnPlay(1)
 

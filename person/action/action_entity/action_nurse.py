@@ -1,22 +1,23 @@
 from . import *
-class ActionPlay(ActionBase):
+class ActionNurse(ActionBase):
     def __init__(self):
-        ActionBase.__init__(self,"play")
+        ActionBase.__init__(self,"nurse")
+        self.value = "nurse"
 
     @classmethod
     def unique_flag(cls):
-        str1 = "action:play"
+        str1 = "action:nurse"
         return str1
 
     @classmethod
     def get_str_list(cls):
-        keylist = ["2-2", "2-3", "2-4", "2-4", "2-4", "2-5", "2-11", "2-12", "2-31"]
+        keylist = ["4-3", "4-3", "4-4", "4-4"]
         return keylist
 
     @classmethod
     def create(cls):
-        str1 = ActionPlay.unique_flag()
-        keylist = ActionPlay.get_str_list()
+        str1 = ActionNurse.unique_flag()
+        keylist = ActionNurse.get_str_list()
         # newlist = []
         # for i in range(len(keylist)):
         #     newlist.append("action:unit&" + keylist[i])
@@ -29,7 +30,7 @@ class ActionPlay(ActionBase):
 
     @classmethod
     def find(cls, unitlist):
-        keylist = ActionPlay.get_str_list()
+        keylist = ActionNurse.get_str_list()
         newlist = []
         for i in range(len(keylist)):
             newlist.append("action:unit&" + keylist[i])

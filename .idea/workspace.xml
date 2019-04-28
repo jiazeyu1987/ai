@@ -2,34 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afaad76d-b7d9-4365-890b-31ff1a8b317a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/action/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/action/action_entity/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/action/action_entity/action_base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/action/action_entity/action_cry.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/action/action_entity/action_play.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/action/action_entity/action_sleep.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/action/action_entity/action_unit.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/action/action_main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/decide_tree/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/decide_tree/decide_tree_main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/perceptions/attibute_perception/wanna_play.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/perceptions/perception_entity/perception_wanna_play.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environment/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/action/action_entity/action_nurse.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/action/action_entity/action_watching.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/decide_tree/built_in_child_search_tree.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/decide_tree/built_in_mother_search_tree.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/person/perceptions/perception_entity/perception_see.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/actions/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/actions/action1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/actions/actions_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/environment/environment_thread.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jtree/jtree_chain.py" afterPath="$PROJECT_DIR$/jtree/jtree_chain.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environment/__init__.py" afterPath="$PROJECT_DIR$/environment/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environment/environment_main.py" afterPath="$PROJECT_DIR$/environment/environment_main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jtree/jtree_main.py" afterPath="$PROJECT_DIR$/jtree/jtree_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jtree/jtree_node.py" afterPath="$PROJECT_DIR$/jtree/jtree_node.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/__init__.py" afterPath="$PROJECT_DIR$/person/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/action/action_entity/__init__.py" afterPath="$PROJECT_DIR$/person/action/action_entity/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/action/action_entity/action_base.py" afterPath="$PROJECT_DIR$/person/action/action_entity/action_base.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/action/action_entity/action_cry.py" afterPath="$PROJECT_DIR$/person/action/action_entity/action_cry.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/action/action_entity/action_play.py" afterPath="$PROJECT_DIR$/person/action/action_entity/action_play.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/action/action_entity/action_sleep.py" afterPath="$PROJECT_DIR$/person/action/action_entity/action_sleep.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/action/action_main.py" afterPath="$PROJECT_DIR$/person/action/action_main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/attribute/__init__.py" afterPath="$PROJECT_DIR$/person/attribute/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/attribute/attribute_main.py" afterPath="$PROJECT_DIR$/person/attribute/attribute_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/perceptions/__init__.py" afterPath="$PROJECT_DIR$/person/perceptions/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/perceptions/attibute_perception/__init__.py" afterPath="$PROJECT_DIR$/person/perceptions/attibute_perception/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/decide_tree/__init__.py" afterPath="$PROJECT_DIR$/person/decide_tree/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/decide_tree/decide_tree_main.py" afterPath="$PROJECT_DIR$/person/decide_tree/decide_tree_main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/perceptions/perception_entity/__init__.py" afterPath="$PROJECT_DIR$/person/perceptions/perception_entity/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/perceptions/perception_entity/perception_full.py" afterPath="$PROJECT_DIR$/person/perceptions/perception_entity/perception_full.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/perceptions/perception_entity/perception_hunger.py" afterPath="$PROJECT_DIR$/person/perceptions/perception_entity/perception_hunger.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/perceptions/perception_main.py" afterPath="$PROJECT_DIR$/person/perceptions/perception_main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/person/person_main.py" afterPath="$PROJECT_DIR$/person/person_main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_folder/test_environment.py" afterPath="$PROJECT_DIR$/test_folder/test_environment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_folder/test_main.py" afterPath="$PROJECT_DIR$/test_folder/test_main.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/person/perceptions/perception_base.py" afterPath="$PROJECT_DIR$/person/perceptions/perception_entity/perception_base.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/person/perceptions/perception_touching.py" afterPath="$PROJECT_DIR$/person/perceptions/perception_entity/perception_touching.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +46,7 @@
     <SUITE FILE_PATH="coverage/new_thought$ff.coverage" NAME="ff Coverage Results" MODIFIED="1555380775253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/new_thought$main.coverage" NAME="main Coverage Results" MODIFIED="1553763423305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
     <SUITE FILE_PATH="coverage/jnode_python$main.coverage" NAME="main Coverage Results" MODIFIED="1539143391973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
-    <SUITE FILE_PATH="coverage/new_thought$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1556083815833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/new_thought$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1556269779558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/new_thought$dd.coverage" NAME="dd Coverage Results" MODIFIED="1555314785395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/jnode_python$base_backet.coverage" NAME="base_backet Coverage Results" MODIFIED="1538034635456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project/bucket" />
     <SUITE FILE_PATH="coverage/new_thought$socket_client.coverage" NAME="socket_client Coverage Results" MODIFIED="1555310290621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -56,8 +60,8 @@
       <file leaf-file-name="decide_tree_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/person/decide_tree/decide_tree_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="257">
+              <caret line="84" column="59" lean-forward="false" selection-start-line="84" selection-start-column="59" selection-end-line="84" selection-end-column="59" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -65,24 +69,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attribute_main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/person/attribute/attribute_main.py">
+      <file leaf-file-name="built_in_mother_search_tree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/person/decide_tree/built_in_mother_search_tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="468">
+              <caret line="27" column="43" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="action_watching.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_watching.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="person_main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/person/person_main.py">
+      <file leaf-file-name="action_nurse.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_nurse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="104">
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,19 +104,11 @@
       <file leaf-file-name="action_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/person/action/action_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jtree_chain.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jtree/jtree_chain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-              <folding />
+            <state relative-caret-position="231">
+              <caret line="21" column="59" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="action_unit.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_unit.py">
+      <file leaf-file-name="action_sleep.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_sleep.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="39" />
+            <state relative-caret-position="335">
+              <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -130,29 +136,33 @@
       <file leaf-file-name="action_cry.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_cry.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="104">
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="action_play.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_play.py">
+      <file leaf-file-name="built_in_child_search_tree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/person/decide_tree/built_in_child_search_tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="413">
+              <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/person/action/action_entity/__init__.py">
+      <file leaf-file-name="perception_main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/person/perceptions/perception_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="78">
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,24 +178,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>move_to_point</find>
-      <find>create_9_circle_array</find>
-      <find>get_point_by_position</find>
-      <find>get_point_by_position(entity</find>
-      <find>get_point_by_position(entity,</find>
-      <find>_get_a_outter_point</find>
-      <find>return</find>
-      <find>append</find>
-      <find>get_point_by_value</find>
-      <find>newe</find>
-      <find>deltaX</find>
-      <find>get_a_outter_point</find>
-      <find>val</find>
-      <find>grid_size</find>
-      <find>pack</find>
-      <find>np.zeros</find>
       <find>old_entity</find>
-      <find>print</find>
       <find>engineio</find>
       <find>Ui_MainForm</find>
       <find>PaintWidget</find>
@@ -198,12 +191,25 @@
       <find>(PerceptionBase)</find>
       <find>running_queue</find>
       <find>1</find>
+      <find>args</find>
+      <find>printJ</find>
+      <find>OnPlay</find>
+      <find>die</find>
+      <find>init_base_search_tree</find>
+      <find>current_action_unit</find>
+      <find>2</find>
+      <find>See</find>
+      <find>see</find>
+      <find>lee</find>
+      <find>printt</find>
+      <find>print</find>
+      <find>get_all</find>
+      <find>11</find>
+      <find>action_monitor</find>
+      <find>on_watch_action</find>
+      <find>watched_action</find>
     </findStrings>
     <replaceStrings>
-      <replace>.infosz</replace>
-      <replace>.info</replace>
-      <replace>.infos</replace>
-      <replace>new1.child</replace>
       <replace>k.child</replace>
       <replace>.HasBucketType(&quot;base&quot;)</replace>
       <replace>info_package</replace>
@@ -230,12 +236,17 @@
       <replace>get_a_outter_point</replace>
       <replace>running_list</replace>
       <replace>2</replace>
+      <replace>printJ</replace>
+      <replace>printt</replace>
+      <replace>prinr</replace>
+      <replace>3</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\MyProject\jnode_python</dir>
       <dir>D:\MyProject\jnode_python\Project</dir>
       <dir>D:\MyProject\new_thought\data_model_folder</dir>
       <dir>D:\MyProject\new_thought</dir>
+      <dir>D:\MyProject\new_thought\person</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -253,57 +264,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/environment/__init__.py" />
-        <option value="$PROJECT_DIR$/environment/environment_main.py" />
-        <option value="$PROJECT_DIR$/timeline/timeline_main.py" />
-        <option value="$PROJECT_DIR$/environment/scene/__init__.py" />
-        <option value="$PROJECT_DIR$/perceptions/perception_utils.py" />
-        <option value="$PROJECT_DIR$/environment/scene/scene_simple_1.py" />
-        <option value="$PROJECT_DIR$/perceptions/perception_base.py" />
-        <option value="$PROJECT_DIR$/perceptions/perception_touching.py" />
-        <option value="$PROJECT_DIR$/test_folder/test_environment.py" />
-        <option value="$PROJECT_DIR$/perceptions/perception_main.py" />
-        <option value="$PROJECT_DIR$/person/person_attribute.py" />
-        <option value="$PROJECT_DIR$/person/attribute/__init__.py" />
-        <option value="$PROJECT_DIR$/person/perceptions/perception_constant.py" />
-        <option value="$PROJECT_DIR$/person/perceptions/attibute_perception/food.py" />
-        <option value="$PROJECT_DIR$/environment/environment_thread.py" />
         <option value="$PROJECT_DIR$/jtree/jtree_dict.py" />
         <option value="$PROJECT_DIR$/test_folder/test_first_algorithm.py" />
         <option value="$PROJECT_DIR$/jtree/__init__.py" />
         <option value="$PROJECT_DIR$/test_folder/test_jtree.py" />
         <option value="$PROJECT_DIR$/person/decide_tree/DecideTreeMain.py" />
-        <option value="$PROJECT_DIR$/person/decide_tree/__init__.py" />
-        <option value="$PROJECT_DIR$/jtree/jtree_main.py" />
         <option value="$PROJECT_DIR$/person/perceptions/perception_base.py" />
         <option value="$PROJECT_DIR$/person/perceptions/perception_touching.py" />
-        <option value="$PROJECT_DIR$/test_folder/test_main.py" />
         <option value="$PROJECT_DIR$/person/perceptions/__init__.py" />
         <option value="$PROJECT_DIR$/person/actions/action_main.py" />
-        <option value="$PROJECT_DIR$/person/__init__.py" />
         <option value="$PROJECT_DIR$/person/action/__init__.py" />
         <option value="$PROJECT_DIR$/jtree/jtree_node.py" />
-        <option value="$PROJECT_DIR$/person/perceptions/perception_entity/__init__.py" />
         <option value="$PROJECT_DIR$/person/perceptions/attibute_perception/wanna_play.py" />
         <option value="$PROJECT_DIR$/person/perceptions/attibute_perception/__init__.py" />
-        <option value="$PROJECT_DIR$/person/perceptions/perception_main.py" />
         <option value="$PROJECT_DIR$/person/perceptions/perception_entity/perception_base.py" />
         <option value="$PROJECT_DIR$/person/perceptions/perception_entity/perception_wanna_play.py" />
         <option value="$PROJECT_DIR$/person/perceptions/perception_entity/perception_touching.py" />
         <option value="$PROJECT_DIR$/person/perceptions/perception_entity/perception_hunger.py" />
         <option value="$PROJECT_DIR$/person/perceptions/perception_entity/perception_full.py" />
-        <option value="$PROJECT_DIR$/person/person_main.py" />
-        <option value="$PROJECT_DIR$/person/action/action_entity/action_base.py" />
-        <option value="$PROJECT_DIR$/person/action/action_entity/action_sleep.py" />
         <option value="$PROJECT_DIR$/person/action/action_entity/ActionUnit.py" />
-        <option value="$PROJECT_DIR$/person/action/action_entity/__init__.py" />
         <option value="$PROJECT_DIR$/person/action/action_entity/action_unit.py" />
-        <option value="$PROJECT_DIR$/person/action/action_entity/action_play.py" />
-        <option value="$PROJECT_DIR$/person/action/action_main.py" />
-        <option value="$PROJECT_DIR$/person/action/action_entity/action_cry.py" />
-        <option value="$PROJECT_DIR$/person/decide_tree/decide_tree_main.py" />
         <option value="$PROJECT_DIR$/jtree/jtree_chain.py" />
+        <option value="$PROJECT_DIR$/test_folder/test_main.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/person/__init__.py" />
+        <option value="$PROJECT_DIR$/person/person_main_config.py" />
+        <option value="$PROJECT_DIR$/environment/environment_thread.py" />
+        <option value="$PROJECT_DIR$/environment/__init__.py" />
+        <option value="$PROJECT_DIR$/test_folder/test_environment.py" />
+        <option value="$PROJECT_DIR$/jtree/jtree_main.py" />
         <option value="$PROJECT_DIR$/person/attribute/attribute_main.py" />
+        <option value="$PROJECT_DIR$/person/attribute/built_in_child_search_tree.py" />
+        <option value="$PROJECT_DIR$/person/attribute/built_in_mother_search_tree.py" />
+        <option value="$PROJECT_DIR$/person/attribute/__init__.py" />
+        <option value="$PROJECT_DIR$/person/decide_tree/__init__.py" />
+        <option value="$PROJECT_DIR$/environment/environment_main.py" />
+        <option value="$PROJECT_DIR$/person/person_main.py" />
+        <option value="$PROJECT_DIR$/person/perceptions/perception_entity/__init__.py" />
+        <option value="$PROJECT_DIR$/person/perceptions/perception_entity/perception_see.py" />
+        <option value="$PROJECT_DIR$/person/config.py" />
+        <option value="$PROJECT_DIR$/person/action/action_entity/__init__.py" />
+        <option value="$PROJECT_DIR$/person/decide_tree/built_in_mother_search_tree.py" />
+        <option value="$PROJECT_DIR$/person/action/action_main.py" />
+        <option value="$PROJECT_DIR$/person/action/action_entity/action_play.py" />
+        <option value="$PROJECT_DIR$/person/action/action_entity/action_sleep.py" />
+        <option value="$PROJECT_DIR$/person/decide_tree/decide_tree_main.py" />
+        <option value="$PROJECT_DIR$/person/decide_tree/built_in_child_search_tree.py" />
+        <option value="$PROJECT_DIR$/person/action/action_entity/action_base.py" />
+        <option value="$PROJECT_DIR$/person/action/action_entity/action_cry.py" />
+        <option value="$PROJECT_DIR$/person/action/action_entity/action_watching.py" />
+        <option value="$PROJECT_DIR$/person/action/action_entity/action_nurse.py" />
+        <option value="$PROJECT_DIR$/person/perceptions/perception_main.py" />
       </list>
     </option>
   </component>
@@ -313,7 +324,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -351,29 +362,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="new_thought" type="cbb8eebc:String" user="new_thought" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="new_thought" type="cbb8eebc:String" user="new_thought" />
-              <item name="algorithm_model_folder" type="cbb8eebc:String" user="algorithm_model_folder" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="new_thought" type="cbb8eebc:String" user="new_thought" />
-              <item name="algorithm_model_folder" type="cbb8eebc:String" user="algorithm_model_folder" />
-              <item name="first_algorishm_entity_folder" type="cbb8eebc:String" user="first_algorishm_entity_folder" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="new_thought" type="cbb8eebc:String" user="new_thought" />
-              <item name="jtree" type="cbb8eebc:String" user="jtree" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
@@ -397,18 +391,20 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="new_thought" type="cbb8eebc:String" user="new_thought" />
               <item name="person" type="cbb8eebc:String" user="person" />
-              <item name="attribute" type="cbb8eebc:String" user="attribute" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="new_thought" type="cbb8eebc:String" user="new_thought" />
-              <item name="person" type="cbb8eebc:String" user="person" />
               <item name="decide_tree" type="cbb8eebc:String" user="decide_tree" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="new_thought" type="cbb8eebc:String" user="new_thought" />
-              <item name="test_folder" type="cbb8eebc:String" user="test_folder" />
+              <item name="person" type="cbb8eebc:String" user="person" />
+              <item name="perceptions" type="cbb8eebc:String" user="perceptions" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="new_thought" type="cbb8eebc:String" user="new_thought" />
+              <item name="person" type="cbb8eebc:String" user="person" />
+              <item name="perceptions" type="cbb8eebc:String" user="perceptions" />
+              <item name="attibute_perception" type="cbb8eebc:String" user="attibute_perception" />
             </path>
           </expand>
           <select />
@@ -425,6 +421,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -434,18 +431,18 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProject\new_thought\person\action\action_entity" />
+      <recent name="D:\MyProject\new_thought\person\perceptions\perception_entity" />
+      <recent name="D:\MyProject\new_thought\environment" />
+      <recent name="D:\MyProject\new_thought\person\perceptions\attibute_perception" />
+      <recent name="D:\MyProject\new_thought" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProject\new_thought\person\decide_tree" />
       <recent name="D:\MyProject\new_thought\person\perceptions\perception_entity" />
       <recent name="D:\MyProject\new_thought\person\attribute" />
       <recent name="D:\MyProject\new_thought\person" />
-      <recent name="D:\MyProject\new_thought\data_model_folder\entity" />
-      <recent name="D:\MyProject\jnode_python\Project\bucket" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\MyProject\new_thought\person\perceptions\attibute_perception" />
-      <recent name="D:\MyProject\new_thought\person\perceptions\perception_entity" />
-      <recent name="D:\MyProject\new_thought\person\action\action_entity" />
-      <recent name="D:\MyProject\new_thought" />
       <recent name="D:\MyProject\new_thought\data_model_folder\entity" />
     </key>
   </component>
@@ -595,20 +592,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35434783" sideWeight="0.5074627" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33913043" sideWeight="0.48933902" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32717392" sideWeight="0.48933902" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13166311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13059701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35217392" sideWeight="0.49253732" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3630435" sideWeight="0.49253732" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -680,64 +677,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/environment/scene/scene_simple_1.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="363" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jtree/jtree_main.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="375" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jtree/jtree_node.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="377" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jtree/jtree_node.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="378" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jtree/jtree_node.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="379" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jtree/jtree_node.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="380" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jtree/jtree_node.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="381" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/person/attribute/attribute_main.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="390" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/person/decide_tree/decide_tree_main.py</url>
+          <url>file://$PROJECT_DIR$/person/action/action_main.py</url>
           <line>62</line>
-          <option name="timeStamp" value="391" />
+          <option name="timeStamp" value="421" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/person/decide_tree/decide_tree_main.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="392" />
+          <url>file://$PROJECT_DIR$/person/action/action_main.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="425" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/person/decide_tree/decide_tree_main.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="393" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/person/decide_tree/decide_tree_main.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="394" />
+          <url>file://$PROJECT_DIR$/person/action/action_main.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="426" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -750,132 +702,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="395" />
+      <option name="time" value="427" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/timeline/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timeline/timeline_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#20#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/scene/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timeline/timeline_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#16#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_folder/test_timeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1249248731/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="159" column="4" lean-forward="false" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_folder/test_environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/scene/scene_simple_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="974">
-          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/environment_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/attribute/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/environment_thread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm_model_folder/first_algorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jtree/jtree_dict.py" />
     <entry file="file://$PROJECT_DIR$/test_folder/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -908,47 +739,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person/decide_tree/DecideTreeMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/decide_tree/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/person/decide_tree/DecideTreeMain.py" />
     <entry file="file://$PROJECT_DIR$/test_folder/test_jtree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="7" column="35" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="7" selection-end-column="35" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/perceptions/attibute_perception/food.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#20#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_folder/test_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,16 +754,6 @@
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#34#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -990,24 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/perceptions/attibute_perception/wanna_play.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/person/perceptions/perception_constant.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -1016,50 +784,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jtree/jtree_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/perception_wanna_play.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/perception_touching.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/perception_hunger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
           <folding>
             <element signature="e#0#15#0" expanded="false" />
           </folding>
@@ -1076,10 +804,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/perception_base.py">
+    <entry file="file://$PROJECT_DIR$/person/action/action_entity/ActionUnit.py" />
+    <entry file="file://$PROJECT_DIR$/jtree/jtree_chain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="260">
+          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1249248731/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12350">
+          <caret line="475" column="0" lean-forward="false" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1094,7 +841,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_sleep.py">
+    <entry file="file://$PROJECT_DIR$/person/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1102,19 +859,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person/action/action_entity/ActionUnit.py">
+    <entry file="file://$PROJECT_DIR$/environment/environment_thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_folder/test_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jtree/jtree_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/perception_wanna_play.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/perceptions/attibute_perception/wanna_play.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/attribute/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_folder/test_environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/decide_tree/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment/environment_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/perception_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/perception_eye.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/attribute/attribute_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/person_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/perceptions/attibute_perception/food.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/perception_hunger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_entity/perception_see.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/person/action/action_entity/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="182">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_unit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_play.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_sleep.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/decide_tree/decide_tree_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="84" column="59" lean-forward="false" selection-start-line="84" selection-start-column="59" selection-end-line="84" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/decide_tree/built_in_mother_search_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/decide_tree/built_in_child_search_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,71 +1107,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_play.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_unit.py">
+    <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_cry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="39" />
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person/person_main.py">
+    <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_nurse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="104">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_watching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/person/action/action_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/action/action_entity/action_cry.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jtree/jtree_chain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/decide_tree/decide_tree_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="231">
+          <caret line="21" column="59" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="59" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person/attribute/attribute_main.py">
+    <entry file="file://$PROJECT_DIR$/person/perceptions/perception_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="78">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

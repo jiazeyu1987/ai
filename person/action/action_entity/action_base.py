@@ -3,6 +3,9 @@ class ActionBase:
         self.value = value
         pass
 
+    def get_value(self):
+        return self.value
+
     @classmethod
     def unique_flag(cls):
         raise Exception("dkfal;dskfjalsdkf")

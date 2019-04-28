@@ -1,24 +1,37 @@
 import time
 import threading
 from timeline import *
-from .environment_thread import *
+from .scene import *
 
-class EnvironmentEntity:
-    def __init__(self):
-        self.person_list = []
-        pass
 
 class EnvironmentMain:
     def __init__(self,timeline):
-        self.val=EnvironmentEntity()
+        self.person_list = []
         self.timeline = timeline
-        t = EnvironmentThread(self.val)
+        t = threading.Thread(target=self.main_loop, args=())
         t.setDaemon(True)
         t.start()
         pass
 
+    def main_loop(self):
+        while True:
+            for k in self.person_list:
+                alive = k.is_alive()
+                if(alive):
+                    k.update_from_outside()
+                    action_unit = k.get_action_unit()
+                    if(action_unit!=None and len(action_unit)>0):
+                        self.broadcast(k,action_unit)
+                if(k.is_in_scene()==False):
+                    k.InScene(SceneSimple1())
+            wait_short()
+
+    def broadcast(self,sender,action_unit):
+        for k in self.person_list:
+            k.action.receive_action(sender,action_unit)
+
     def add_person(self,person):
-        self.val.person_list.append(person)
+        self.person_list.append(person)
 
 
 

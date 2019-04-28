@@ -5,6 +5,8 @@ class JTreeMain:
         self.dict = {}
         pass
 
+    def is_empty(self):
+        return len(self.dict)==0
 
     def find(self,string_key):
         if(string_key in self.dict):
