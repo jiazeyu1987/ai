@@ -38,6 +38,7 @@ class FirstAlgorithm:
     def _find_shorts(self,list1):
         #print("((((((((( in short ))))))))))))))))")
         total_marks = self._get_total_marks(list1)
+
         # for k in total_marks:
         #     print(k)
         # return
